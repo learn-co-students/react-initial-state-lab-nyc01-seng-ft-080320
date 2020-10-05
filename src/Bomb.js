@@ -11,9 +11,9 @@ class Bomb extends React.Component{
 
     bombSaying = () => {
         const secondsLeft = this.state.secondsLeft
-        if(this.state.secondsLeft !== 0){
+        if(secondsLeft !== 0){
             return <div>{secondsLeft} seconds left before I go boom!</div>
-        } else if(this.state.secondsLeft === 0){
+        } else if(secondsLeft === 0){
             return <div>Boom!</div>
         }
     }
