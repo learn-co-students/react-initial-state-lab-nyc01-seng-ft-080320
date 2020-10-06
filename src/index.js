@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ImageSlider from './ImageSlider';
-import Bomb from './Bomb';
+import App from './App'
 
 ReactDOM.render(
-  <div>
-    <ImageSlider />
-    <Bomb initialCount={120} />
-  </div>,
+  <App />,
   document.getElementById('root')
 );
