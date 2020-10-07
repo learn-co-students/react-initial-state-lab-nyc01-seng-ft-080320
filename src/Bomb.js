@@ -20,7 +20,7 @@ constructor(props){
 
 render(){
 
-    let countDownresponse = this.state.secondsleft===0? 'Boom':`${this.state.secondsLeft} seconds left before I go boom`
+    let countDownresponse = this.state.secondsLeft === 0? 'Boom!':`${this.state.secondsLeft} seconds left before I go boom!`
     
 
     return (
