@@ -6,29 +6,26 @@ class Bomb extends React.Component{
 constructor(props){
        super();
         this.state = {
-            secondsLeft:props.initialCount
+            secondsLeft: props.initialCount, 
         }
     }
 
-decrement =() =>{
-    const newCount = this.state.count -1;
-    this.setState({count:newCount})
-}
+// decrement =() =>{
+//     setInterval(()=>{ 
+//         this.setState({secondsLeft: this.state.secondsLeft-1})
+//     }, 1000)
+// }
+
 
 
 render(){
 
-    const returnValue = () => {
-        if(this.state.secondsLeft === 0) {
-        return 'Boom!' 
-        } else {
-        return '{this.state.secondsLeft} left before I go boom!'
-        }
-    }
+    let countDownresponse = this.state.secondsleft===0? 'Boom':`${this.state.secondsLeft} seconds left before I go boom`
+    
 
     return (
         <div>
-            {returnValue}
+            {countDownresponse}
         </div>
         
     )
